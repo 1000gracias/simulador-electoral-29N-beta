@@ -2,24 +2,9 @@ export const elecciones23J = {
   metadata: {
     fecha: "23 de Julio de 2023",
     tipo: "Elecciones Generales España",
-    total_escanos_congreso: 350,
-    // Resumen nacional de escaños que surgieron de estas elecciones:
-    hemiciclo_nacional: {
-      pp: 137,
-      psoe: 121,
-      vox: 33,
-      sumar: 31,
-      erc: 7,
-      junts: 7,
-      bildu: 6,
-      pnv: 5,
-      bng: 1,
-      cc: 1,
-      upn: 1
-    }
+    total_escanos_congreso: 350
   },
 
-  // Las 52 circunscripciones con los escaños exactos que repartieron en 2023
   provincias: {
     "01": { id: "01", nombre: "Álava", escanos: 4 },
     "02": { id: "02", nombre: "Albacete", escanos: 4 },
@@ -75,48 +60,91 @@ export const elecciones23J = {
     "52": { id: "52", nombre: "Melilla", escanos: 1 }
   },
 
-  // Votos reales oficiales del 23-J por provincia. 
-  // He añadido la propiedad "escanos_conseguidos" para que la app pueda comparar la realidad vs la simulación.
   resultados_oficiales: {
-    "28": { // Madrid
+    // === PROVINCIAS CON DATOS REALES CARGADOS ===
+    "28": {
       votos_totales_validos: 3519159,
       resultados: { pp: 1463112, psoe: 986934, sumar: 546255, vox: 492723 },
-      escanos_conseguidos: { pp: 15, psoe: 11, sumar: 6, vox: 5 }
     },
-    "08": { // Barcelona
+    "08": {
       votos_totales_validos: 2639433,
       resultados: { psoe: 864491, sumar: 400490, pp: 362456, erc: 322306, junts: 256860 },
-      escanos_conseguidos: { psoe: 13, sumar: 7, pp: 6, erc: 4, junts: 2 }
     },
-    "46": { // Valencia
+    "46": {
       votos_totales_validos: 1419736,
       resultados: { pp: 489375, psoe: 456891, sumar: 213239, vox: 216075 },
-      escanos_conseguidos: { pp: 6, psoe: 5, sumar: 2, vox: 2 }
     },
-    "41": { // Sevilla
+    "41": {
       votos_totales_validos: 1079361,
       resultados: { psoe: 461623, pp: 279586, sumar: 142167, vox: 118431 },
-      escanos_conseguidos: { psoe: 5, pp: 4, sumar: 2, vox: 1 }
     },
-    "03": { // Alicante
+    "03": {
       votos_totales_validos: 887640,
       resultados: { pp: 326880, psoe: 283187, vox: 142079, sumar: 114389 },
-      escanos_conseguidos: { pp: 5, psoe: 4, vox: 2, sumar: 1 }
     },
-    "29": { // Málaga
+    "29": {
       votos_totales_validos: 757835,
       resultados: { pp: 289452, psoe: 228495, vox: 122240, sumar: 91523 },
-      escanos_conseguidos: { pp: 5, psoe: 3, vox: 2, sumar: 1 }
     },
-    "18": { // Granada
+    "18": {
       votos_totales_validos: 504445,
       resultados: { pp: 186357, psoe: 165600, vox: 80164, sumar: 54101 },
-      escanos_conseguidos: { pp: 3, psoe: 2, vox: 1, sumar: 1 }
     },
-    "42": { // Soria
+    "42": {
       votos_totales_validos: 49419,
       resultados: { pp: 18451, psoe: 14619, vox: 5219, sumar: 2577 },
-      escanos_conseguidos: { pp: 1, psoe: 1, vox: 0, sumar: 0 }
-    }
+    },
+    "33": { // Asturias
+      votos_totales_validos: 593893,
+      resultados: { pp: 212808, psoe: 202280, sumar: 87588, vox: 74211 },
+    },
+    "50": { // Zaragoza
+      votos_totales_validos: 517454,
+      resultados: { pp: 191630, psoe: 161864, vox: 62206, sumar: 61845 },
+    },
+
+    // === RESTO DE PROVINCIAS (Esqueleto listo para rellenar) ===
+    "01": { votos_totales_validos: 0, resultados: {} },
+    "02": { votos_totales_validos: 0, resultados: {} },
+    "04": { votos_totales_validos: 0, resultados: {} },
+    "05": { votos_totales_validos: 0, resultados: {} },
+    "06": { votos_totales_validos: 0, resultados: {} },
+    "07": { votos_totales_validos: 0, resultados: {} },
+    "09": { votos_totales_validos: 0, resultados: {} },
+    "10": { votos_totales_validos: 0, resultados: {} },
+    "11": { votos_totales_validos: 0, resultados: {} },
+    "12": { votos_totales_validos: 0, resultados: {} },
+    "13": { votos_totales_validos: 0, resultados: {} },
+    "14": { votos_totales_validos: 0, resultados: {} },
+    "15": { votos_totales_validos: 0, resultados: {} },
+    "16": { votos_totales_validos: 0, resultados: {} },
+    "17": { votos_totales_validos: 0, resultados: {} },
+    "19": { votos_totales_validos: 0, resultados: {} },
+    "20": { votos_totales_validos: 0, resultados: {} },
+    "21": { votos_totales_validos: 0, resultados: {} },
+    "22": { votos_totales_validos: 0, resultados: {} },
+    "23": { votos_totales_validos: 0, resultados: {} },
+    "24": { votos_totales_validos: 0, resultados: {} },
+    "25": { votos_totales_validos: 0, resultados: {} },
+    "26": { votos_totales_validos: 0, resultados: {} },
+    "27": { votos_totales_validos: 0, resultados: {} },
+    "30": { votos_totales_validos: 0, resultados: {} },
+    "31": { votos_totales_validos: 0, resultados: {} },
+    "32": { votos_totales_validos: 0, resultados: {} },
+    "34": { votos_totales_validos: 0, resultados: {} },
+    "35": { votos_totales_validos: 0, resultados: {} },
+    "36": { votos_totales_validos: 0, resultados: {} },
+    "37": { votos_totales_validos: 0, resultados: {} },
+    "38": { votos_totales_validos: 0, resultados: {} },
+    "39": { votos_totales_validos: 0, resultados: {} },
+    "40": { votos_totales_validos: 0, resultados: {} },
+    "43": { votos_totales_validos: 0, resultados: {} },
+    "44": { votos_totales_validos: 0, resultados: {} },
+    "45": { votos_totales_validos: 0, resultados: {} },
+    "47": { votos_totales_validos: 0, resultados: {} },
+    "48": { votos_totales_validos: 0, resultados: {} },
+    "49": { votos_totales_validos: 0, resultados: {} },
+    "51": { votos_totales_validos: 0, resultados: {} },
+    "52": { votos_totales_validos: 0, resultados: {} }
   }
 } as const;
